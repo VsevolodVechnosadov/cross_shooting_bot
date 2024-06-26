@@ -15,6 +15,8 @@ def create_connection():
             port='5432',
         )
     except OperationalError as e:
-        pass
+        print(e)
     return connection
+
+connection = create_connection()
     
